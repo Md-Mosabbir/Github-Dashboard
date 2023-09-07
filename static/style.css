@@ -15,7 +15,8 @@
 
 body {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 5fr;
+  height: 100vh;
 }
 
 header {
@@ -26,9 +27,13 @@ header {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: space-around;
+
+  padding: 1rem;
 }
 header button {
   min-width: 5rem;
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
 }
 
 .profile-buttons {
@@ -73,6 +78,8 @@ nav {
   height: 3rem;
   text-align: left;
   background-color: transparent;
+
+  padding: 1rem;
 }
 
 #logo {
@@ -86,4 +93,48 @@ nav {
 
 main {
   background-color: yellow;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: 2rem;
+
+  padding: 1.2rem;
+}
+main h1 {
+  padding-block: 0.8rem;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.project-git {
+  background-color: #af0f19;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.card-buttons {
+  justify-self: end;
+  align-self: self-end;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.notice {
+  padding-block: 10px;
+}
+.trending ul {
+  display: grid;
+  gap: 1rem;
+}
+
+.aside-container {
+  display: grid;
+  gap: 1rem;
 }
